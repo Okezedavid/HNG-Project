@@ -1,194 +1,199 @@
 /* styles.css */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
 }
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    box-sizing: border-box;
-    background-color: #1d1e22;
-
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-color: #1d1e22;
 }
 
 /* Stylings for the header texts */
-header, section, footer {
-    padding: 20px;
-    text-align: center;
+header,
+section,
+footer {
+  padding: 20px;
+  text-align: center;
 }
 
 header h1 {
-    color: #d1d1b2;
-    margin: 0;
-    font-size: 3rem;
-    font-family: 'Courier New', Courier, monospace;
+  color: #d1d1b2;
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 header span {
-    color: #d5ba91;
-    font-family: 'Courier New', Courier, monospace;
-
+  color: #d5ba91;
+  font-family: "Courier New", Courier, monospace;
 }
 
-
- /* ANIMATION FOR THE HEADER TEXT */
+/* ANIMATION FOR THE HEADER TEXT */
 
 /* Define the keyframes for the animation */
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Apply the animation to the <h1> element */
 header h1 {
-    animation: slideIn 3s ease-out;
+  animation: slideIn 3s ease-out;
 }
-
 
 /* Styles for all the section parts */
 
-section h2 p{
-    padding-top: 40px;
+.about-me section p {
+  font-size: 20px;
 }
-section h2{
-    color: #cabebe;
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    padding-bottom: 20px;
-    font-size: 40px;
+section h2 p {
+  padding-top: 40px;
+}
+section h2 {
+  color: #cabebe;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  padding-bottom: 20px;
+  font-size: 40px;
 }
 
 /* Image stylings */
 .image-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .image-part img {
-    border-radius: 29px;
+  border-radius: 29px;
 }
 
 img {
-    height: auto;
+  height: auto;
 }
 img {
-    transition: transform 0.5s ease; /* Adjust the duration as needed */
+  transition: transform 0.5s ease; /* Adjust the duration as needed */
 }
 
 img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 section p {
-    color: #bdb0b0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+  color: #bdb0b0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
 }
 
 /* Styles for the bottom part */
 section ul li {
-    color: #d9d1d1;
-    font-size: 18px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+  color: #d9d1d1;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .bottom {
-    padding-bottom: 7rem;
+  padding-bottom: 7rem;
 }
 
 /* Special styles for the time section */
-.time-part  {
-    animation: fadeIn 1.5s ease-out forwards;
-    background-color: #383232;
-    justify-content: center;
-    border-radius: 20px;
-    align-items: center;
-    display: block;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Updated box-shadow */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    padding: 15px; 
-    box-sizing: border-box; 
-    margin: auto; 
-   width: 340px;
+.time-part {
+  animation: fadeIn 1.5s ease-out forwards;
+  background-color: #383232;
+  justify-content: center;
+  border-radius: 20px;
+  align-items: center;
+  display: block;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Updated box-shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: auto;
+  width: 340px;
 }
 
-  
-  .time-part:hover {
-    box-shadow: 0 0 10px #616b6d;
-  }
+.time-part:hover {
+  box-shadow: 0 0 10px #616b6d;
+}
 
-
+hr {
+    width: 15%;
+    margin: auto;
+    transform: translateY(-20px);
+} 
 h1 {
-    color: #333;
+  color: #333;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 a {
-    display: block;
-    margin: 10px 0;
-    font-size: 20px;
-    /* text-decoration: none; */
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+  /* text-decoration: none; */
 }
-
 
 /* Styling for the footer */
 
 .footer-part {
-    background-color: #383232;
-    color: #fff;
-    padding: 1rem;
-    margin-bottom: -2.5rem;
+  background-color: #383232;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: -2.5rem;
+  box-sizing: border-box;
 }
 
 .footer-part a p {
-    color: #fff;
-    margin-top: 20px;
+  color: #fff;
+  margin-top: 20px;
 }
- .footer-part footer a {
-    color: #e6d9d9;
-    text-decoration:underline;
- }
-
- .footer-part footer a:hover {
-    color: #fff;
+.footer-part footer a {
+  color: #e6d9d9;
+  text-decoration: underline;
 }
 
-.footer-part footer p{
-    float: left;
-    font-size: 13px;
+.footer-part footer a:hover {
+  color: #fff;
 }
 
+.footer-part footer p {
+  float: left;
+  font-size: 13px;
+}
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
+  body {
+    padding: 10px;
+  }
 
-    header, section, footer {
-        padding: 10px;
-    }
+  header,
+  section,
+  footer {
+    padding: 10px;
+  }
 
-   .image-part img {
+  .image-part img {
     width: 70%;
-   } 
+  }
 }
 
 @media (max-width: 360px) {
-    .time-part {
-        width: 310px;
-    }
+  .time-part {
+    width: 310px;
+  }
 }
+
+
