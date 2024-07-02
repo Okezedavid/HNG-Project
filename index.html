@@ -9,10 +9,15 @@
   <body>
     <header>
       <h1>My Tech Goals for <span>the next two(2) Years</span></h1>
+    <hr class="line">
     </header>
-    <div class="about-me">
-      <section>
+    <div>
+      <section class="about-me">
         <h2>About Me</h2>
+        <section class="myself">
+          <p id="role">Frontend Engineer</p>
+          <p id="me">Hello World👋🏻! I'm David Okeze,an Enthusiastic Front-End Developer, building fascinating Websites with Passion.I love movies and everthing related to tech💯.Currently based in Jos,Plateau Nigeria.</p>
+        </section>
         <p data-testid="slackDisplayName">
           Slack Name: <span id="slackDisplayName">Okezedavid</span>
         </p>
@@ -45,23 +50,43 @@
     <div>
       <section class="bottom">
         <div>
-            <h2>Tech Goals</h2>
-            <hr>
+          <h2>Tech Goals</h2>
+          <hr />
         </div>
-        
+
         <ul>
-          <li>I intend to improve my skills as much as possible.</li>
-          <li>In the next two years,I plan to be a Fullstack Developer.</li>
+          <li>I intend to improve my skills as much as possible by contributing to open source and working on more projects e.tc.</li>
+          <br>
+          <li>In the next two years, I plan to be a Fullstack Developer.</li>
+          <br>
           <li>
             I intend to have solved at least five(5) problems we have in the
             world using my skills.
           </li>
+          <br>
           <li>
-            I want to be a source of help and guidiance to newbies in Tech.
+            I want to be a source of help and guidance to newbies in Tech.
           </li>
-          <li>I hope to increase job opportunies for myself</li>
+          <br>
+          <li>I hope to increase job opportunities for myself</li>
+          <br>
           <li>I also intend to keep broadening my professional network.</li>
         </ul>
+      </section>
+    </div>
+    <div>
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input placeholder="e.g John" type="text" id="name" name="name" required  /><br />
+          <label for="email">Email:</label>
+          <input placeholder="Your email" type="email" id="email" name="email" required /><br />
+          <label for="message">Message:</label><br />
+          <textarea placeholder="Your message" id="message" name="message" rows="5" required></textarea
+          ><br />
+          <button type="submit">Send</button>
+        </form>
       </section>
     </div>
     <div class="footer-part">

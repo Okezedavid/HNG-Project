@@ -31,6 +31,14 @@ header span {
   font-family: "Courier New", Courier, monospace;
 }
 
+.line {
+  width: 100%;
+  margin-top: 30px;
+  height: 4px;
+  background-color: rgb(160, 152, 152);
+  border: none;
+}
+
 /* ANIMATION FOR THE HEADER TEXT */
 
 /* Define the keyframes for the animation */
@@ -52,9 +60,17 @@ header h1 {
 
 /* Styles for all the section parts */
 
-.about-me section p {
-  font-size: 20px;
+ section #me {
+  font-size: 40px;
+  color: #d1d1b2;
 }
+
+section #role {
+  color: #bdb0b0;
+  font-size: 20px;
+  
+}
+
 section h2 p {
   padding-top: 40px;
 }
@@ -146,6 +162,89 @@ a {
   /* text-decoration: none; */
 }
 
+
+/* Contact section styles */
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #cabebe;
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact label {
+  color: #ccccc4;
+  margin-top: 10px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color:  #fff;
+  color:#1d1b1b;
+}
+
+.contact button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ede8e3;
+  color: #1d1b1b;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #cabebe;
+}
+
+.contact form input {
+  background-color: #fff;
+  border: none;
+  caret-color: #1d1b1b;
+  color: #1d1b1b;
+}
+
+textarea {
+  caret-color: #1d1b1b;
+  resize: vertical; 
+}
+textarea:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+#currentTimeUTC {
+  color: #eaeacb;
+  background-color: #1d1e22;
+  font-style: italic;
+  font-weight: 540;
+}
+
+#currentDay {
+  color: #eaeacb;
+  background-color: #1d1e22;
+  font-style: italic;
+  font-weight: 600;
+}
+
 /* Styling for the footer */
 
 .footer-part {
@@ -190,10 +289,26 @@ a {
   }
 }
 
+@media (max-width: 450px) {
+  .line  {
+    height: 2px;
+    width: 70%;
+  }
+}
+
 @media (max-width: 360px) {
   .time-part {
     width: 310px;
   }
-}
 
+  section #me {
+    font-size: 32px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+
+}
 
