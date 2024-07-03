@@ -285,7 +285,7 @@ input:focus {
   }
 
   .image-part img {
-    width: 70%;
+    /* width: 70%; */
   }
 }
 
